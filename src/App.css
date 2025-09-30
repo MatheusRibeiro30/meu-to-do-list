@@ -1,42 +1,117 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
   text-align: center;
+  border-radius: 8px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 8px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.lista-alunos {
+  margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.lista-alunos h2 {
+  color: #0077cc;
+}
+
+.lista-alunos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista-alunos li {
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+.botao-clique {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.botao-clique:hover {
+  background-color: #45a049;
+}
+
+
+.alerta {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: white;
+}
+
+.alerta.sucesso {
+  background-color: green;
+}
+
+.alerta.erro {
+  background-color: red;
+}
+
+
+.acoes {
+  margin: 20px 0;
+}
+
+.acoes-button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.acoes-button:hover {
+  background-color: #005fa3;
+}
+
+
+.cards-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  width: 200px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
